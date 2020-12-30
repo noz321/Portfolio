@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My works</title>
     <link rel="stylesheet" href="/css/style.css">
+    
+   
 </head>
 
 <body id="worksBody">
+
     <div class="wrapper">
         <div id="navBar">
             <ul>
@@ -25,26 +28,28 @@
                 <tr>
                     <td>
                         <Form>
-                            <label for="first">1st Number</label>
+                            <label for="First">1st Number</label>
                             <Input type="number" id="first" name="First" placeholder="First number">
                     </td>
                     <td>
-                        <label for="second">2nd Number</label>
+                        <label for="Second">2nd Number</label>
                         <Input type="number" id="second" name="Second" placeholder="Second number">
                         </Form>
                     </td>
+                </tr>
                 <tr>
                     <td>
-                        <button type="button" id="show1">GCD - LNKO</button>
+                        <button type="button" id="show1" onclick="document.getelementById('txtarea').innerHTML=lnko()">GCD - LNKO</button>
                     </td>
                     <td>
                         <textarea id="txtarea" placeholder="Result"></textarea>
                     </td>
                 </tr>
-                </tr>
             </table>
         </div>
+
     </div>
+    <script type="javascript" src=functions.js></script>
 </body>
 
 </html>
